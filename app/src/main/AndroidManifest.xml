@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.evaldo.firebase">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="FAFIC ADMINISTRADOR"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".activity.Administrador.ExibirResultados.ExibirResultatosQuantitativos2"></activity>
+        <activity android:name=".activity.Administrador.Manutencao.PrincipalManutencaoActivity" />
+        <activity android:name=".activity.Administrador.Manutencao.CadastrarDispostivoKiosqueActivity" />
+        <activity android:name=".activity.Administrador.DefinirQuestionarioParaTerminais.ListarQuestionarioResumidasKiosqueActivity" />
+        <activity android:name=".activity.Administrador.DefinirQuestionarioParaTerminais.ListarkiosquesActivity" />
+        <activity android:name=".activity.Administrador.ExibirResultados.ExibirResultadoQuantitativosActivity" />
+        <activity
+            android:name=".activity.Administrador.ExibirResultados.ListarResultadosResumidasActivity"
+            android:label="@string/title_activity_listar_respostas_resumidas"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.Administrador.GerenciadorQuestionatio.ListarQuestionariosActivity"
+            android:label="@string/title_activity_geranciar_perguntas_mais"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.Administrador.GerenciadorQuestionatio.AtualizarPerguntasActivity"
+            android:label="ATUALIZAR QUESTIONÁRIO" />
+        <activity android:name=".activity.Cliente.TelaGerenciadorlActivity" />
+        <activity android:name=".activity.Administrador.Manutencao.CadastrarDispositivoAdministradorActivity" />
+        <activity android:name=".activity.Administrador.GerenciadorQuestionatio.NovoQuestionarioActivity" />
+        <activity
+            android:name=".activity.Administrador.Login.LoginAdministradorActivity"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".activity.Administrador.PrincipalActivity" />
+        <activity android:name=".activity.Administrador.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.Administrador.ExibirResultados.ListarResultadosDetalhadasActivity"
+            android:label="Questionários Cadastrados" />
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.exemplo.firebasecursods"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider" />
+        </provider>
+    </application>
+
+</manifest>
