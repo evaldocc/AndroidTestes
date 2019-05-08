@@ -24,7 +24,7 @@
         android:layout_margin="8dp"
         android:onClick="clicouConfirmarQuestionario"
         android:padding="8dp"
-        android:text="Dados Quantitativos" />
+        android:text="Resultados Quantitativos" />
 
     <Button
         android:id="@+id/button2"
@@ -32,7 +32,7 @@
         android:layout_height="60dp"
         android:layout_margin="8dp"
         android:padding="8dp"
-        android:text="Button" />
+        android:text="Resultados Detalhados" />
 
     <android.support.v7.widget.RecyclerView
         android:id="@+id/recycler_view_mostrar_resultados_resumidos"
