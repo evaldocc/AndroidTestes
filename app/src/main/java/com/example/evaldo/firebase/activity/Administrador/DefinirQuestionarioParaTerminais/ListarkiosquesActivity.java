@@ -101,6 +101,8 @@ public class ListarkiosquesActivity extends AppCompatActivity {
 
                 listDispositivoKiosqueArrayList.clear();
                 for (DataSnapshot data : dataSnapshot.getChildren()) {
+                    System.out.println(data);
+
                     try {
                         DispositivoKiosque dispositivoKiosque = data.getValue(DispositivoKiosque.class);
                         dispositivoKiosque.setKey(data.getKey());
